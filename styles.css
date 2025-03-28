@@ -1,0 +1,109 @@
+body{
+    background-color: #a09d9d;
+    font-family: Arial, sans-serif;
+    margin: 5px;
+    padding: 5px;
+    line-height: 1.6;
+}   
+
+header {
+    background-color: rgb(123, 176, 211);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 17px;
+    border-radius: 2%;
+}
+
+nav{
+    background: #f3eaea;
+    padding: 1px ;
+}
+nav ul{
+    text-align: center;
+    padding: 0px;    
+}
+nav ul li{
+    display: inline;
+    margin: 0 25px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 17px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(123, 176, 211);
+    padding: 10px;
+    margin: 5px;
+}
+
+
+section.informacion{
+    background-color: rgb(245, 205, 255);
+    color: rgb(17, 17, 17);
+    text-align: center;
+    padding: 10px 0;
+    margin: 10px;
+    width: 100%;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 39px;
+}
+
+.aside_contacto {
+    float: left;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 200px 40px; 
+    width: 500px;
+    height: 160px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+}
+.asideinput {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    padding: 30px;
+    margin: 50px 40px;
+    width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+}
+
+input {
+    display: block;
+    margin: 10px 0;
+    padding: 8px;
+    width: calc(100% - 20px);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.box {
+    font-size: 17px;
+    padding: 14px;
+    width: 100%;
+}
