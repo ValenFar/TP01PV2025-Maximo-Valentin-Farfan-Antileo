@@ -1,6 +1,6 @@
 body{
     background-color: #a09d9d;
-    font-family: Arial, sans-serif;
+    font-family: "roboto", sans-serif;
     margin: 5px;
     padding: 5px;
     line-height: 1.6;
@@ -43,12 +43,16 @@ main{
 
 
 section.informacion{
-    background-color: rgb(245, 205, 255);
+    align-items: center;
+    display: flex;
+    background-color: rgb(255, 255, 255);
     color: rgb(17, 17, 17);
     text-align: center;
-    padding: 10px 0;
-    margin: 10px;
+    padding: 20px;
+    margin: 20px;
     width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
 }
 
 footer {
@@ -75,8 +79,7 @@ h1{
     align-items: center;
     padding: 20px;
     margin: 200px 40px; 
-    width: 500px;
-    height: 160px;
+    width: 30%;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-size: 20px;
@@ -87,7 +90,7 @@ h1{
     text-align: left;
     padding: 30px;
     margin: 50px 40px;
-    width: 600px;
+    width: 40%;
     border-radius: 10px;
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
 }
