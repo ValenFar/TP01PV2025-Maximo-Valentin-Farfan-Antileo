@@ -23,17 +23,23 @@
             <p> Para comunicarse por dudas o consultas, porfavor rellene el formulario. Dentro de los proximos dias nos estemos comunicando </p>
         </aside>
         <aside class="asideinput">
-            <p>Nombre/s</p>
-            <input type="text"> </input>
-            <p>Apellido/s</p>
-            <input type="text"> </input>
-            <p>Telefono</p>
-            <input type="tel"> </input>
-            <p>Mail</p>
-            <input type="email">  </input>
-            <p>Consulta</p>
-            <input  class="box" type="text">  </input>
-            <input type="button" value="Enviar"> </input>
+            <label for="nombre">Nombre/s</label>
+            <input type="text" id="nombre" name="nombre" required>
+        
+            <label for="apellido">Apellido/s</label>
+            <input type="text" id="apellido" name="apellido" required>
+        
+            <label for="telefono">Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="Ej: +54 9 123456789" required>
+        
+            <label for="email">Mail</label>
+            <input type="email" id="email" name="email" placeholder="Ej: ejemplo@correo.com" required>
+        
+            <label for="consulta">Consulta</label>
+            <textarea id="consulta" name="consulta" class="box" rows="4" cols="4" required></textarea>
+        
+            <button type="submit">Enviar</button>
+            
         </aside>
         
         
@@ -41,7 +47,7 @@
 
     </main>
     <footer>
-        <p>© Valentin Farfan Todos los Derechos Reservados 2025</p>
+        <p>© TP1 Valentin Farfan </p>
     </footer>   
 </body>
 </html>

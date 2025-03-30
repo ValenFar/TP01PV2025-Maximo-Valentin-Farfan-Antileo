@@ -11,13 +11,13 @@ header {
     color: rgb(255, 255, 255);
     text-align: center;
     padding: 10px 0;
-    font-size: 17px;
+    font-size: 22px;
     border-radius: 2%;
 }
 
 nav{
     background: #f3eaea;
-    padding: 1px ;
+    padding: 0.1px ;
 }
 nav ul{
     text-align: center;
@@ -25,34 +25,73 @@ nav ul{
 }
 nav ul li{
     display: inline;
-    margin: 0 25px;
+    margin: 100px;
 }
 nav ul li a{
     text-decoration: none;
     color: rgb(0, 0, 0);
-    font-size: 17px;
+    font-size: 20px;
 }
 
 main{
+    align-items: center;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     background-color: rgb(123, 176, 211);
-    padding: 10px;
+    padding: 20px;
     margin: 5px;
+    height: auto;
+    
 }
 
 
 section.informacion{
     align-items: center;
+    text-align: left;
     display: flex;
     background-color: rgb(255, 255, 255);
     color: rgb(17, 17, 17);
-    text-align: center;
-    padding: 20px;
-    margin: 20px;
-    width: 100%;
+    padding: 1.5%;
+    margin: 1.5%;
+    width: 700px;
+    height: 300px;
     border-radius: 10px;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    height: auto;
+}
+section.informacion2{
+    align-items: center;
+    text-align: left;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    color: rgb(17, 17, 17);
+    padding: 1.5%;
+    margin: 1.5%;
+    width: 700px;
+    height: 370px;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    height: auto;
+    
+}
+
+section.turismo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(17, 17, 17);
+    padding: 1.5%;
+    margin: 1.5%;
+    width: 1500px;
+    height: 750px;
+    border-radius: 45px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
 }
 
 footer {
@@ -66,7 +105,7 @@ footer {
 h1{
     text-align: center;
     color: rgb(255, 255, 255);
-    font-size: 39px;
+    font-size: 40px;
 }
 
 .aside_contacto {
@@ -78,7 +117,7 @@ h1{
     justify-content: center;
     align-items: center;
     padding: 20px;
-    margin: 200px 40px; 
+    margin: 20px 40px; 
     width: 30%;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -93,6 +132,13 @@ h1{
     width: 40%;
     border-radius: 10px;
     box-shadow: 0 0 100px rgba(0, 0, 0, 0.1);
+}
+textarea{
+    width: 100%;
+    max-width: 680px;
+    height: 100px;
+    resize: none;
+
 }
 
 input {
@@ -109,4 +155,47 @@ input {
     font-size: 17px;
     padding: 14px;
     width: 100%;
+}
+
+.img-cartel{
+    margin: 20px;
+    background-color: #f3eaea;
+    border-radius: 8%;
+    padding: 10px;
+    width: 44%;
+    
+}
+
+.img-turismo{
+    background-color: #f3eaea;
+    border-radius: 8%;
+    padding: 10px;
+    width: 800px;
+    height: 450px;
+    margin: 15px;
+}
+
+.img-museo{
+    margin: 15px;
+    padding: 10px;
+    background-color: #f3eaea;
+    border-radius: 8%;
+    width: 30%;
+    
+}
+
+section.museos{
+    align-items: center;
+    text-align: left;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    color: rgb(17, 17, 17);
+    padding: 1.5%;
+    margin: 1.5%;
+    width: 700px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
+    font-size: 17px;
+    height: auto;
 }
