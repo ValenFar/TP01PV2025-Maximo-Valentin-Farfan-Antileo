@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Neuquén</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/assets/css/styles.css">
 </head>
 <body>
     <header>
@@ -13,7 +13,7 @@
     </header>
     <nav>
         <ul>
-            <li><a href="/Neuquen.html">Inicio</a></li>
+            <li><a href="/index.html">Inicio</a></li>
             <li><a href="museos.html">Museos</a></li>
             <li><a href="/Contacto.html">Contacto</a></li>
         </ul>
@@ -23,31 +23,42 @@
             <p> Para comunicarse por dudas o consultas, porfavor rellene el formulario. Dentro de los proximos dias nos estemos comunicando </p>
         </aside>
         <aside class="asideinput">
-            <label for="nombre">Nombre/s</label>
-            <input type="text" id="nombre" name="nombre" required>
-        
-            <label for="apellido">Apellido/s</label>
-            <input type="text" id="apellido" name="apellido" required>
-        
-            <label for="telefono">Teléfono</label>
-            <input type="tel" id="telefono" name="telefono" placeholder="Ej: +54 9 123456789" required>
-        
-            <label for="email">Mail</label>
-            <input type="email" id="email" name="email" placeholder="Ej: ejemplo@correo.com" required>
-        
-            <label for="consulta">Consulta</label>
-            <textarea id="consulta" name="consulta" class="box" rows="4" cols="4" required></textarea>
-        
-            <button type="submit">Enviar</button>
+            <form id="contact-form">
+                <label for="nombre">Nombre/s</label>
+                <input type="text" id="nombre" name="nombre" required>
+            
+                <label for="apellido">Apellido/s</label>
+                <input type="text" id="apellido" name="apellido" required>
+            
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ej: +54 9 123456789" required>
+            
+                <label for="email">Mail</label>
+                <input type="email" id="email" name="email" placeholder="Ej: ejemplo@correo.com" required>
+            
+                <label for="consulta">Consulta</label>
+                <textarea id="consulta" name="consulta" class="box" rows="4" cols="4" required></textarea>
+            
+                <button type="submit" onclick="mostrarDatos()">Enviar</button>
+            </form>
             
         </aside>
-        
-        
-
-
+   
     </main>
     <footer>
         <p>© TP1 Valentin Farfan </p>
     </footer>   
+
+    <script> // sentencia de programacion
+        function mostrarDatos(){
+            event.preventDefault(); // Evita que el formulario se envíe de forma predeterminada
+            var nombre = document.getElementById("nombre").value;
+            var apellido = document.getElementById("apellido").value;
+            //recupera los valores de los campos del formulario desde el DOM
+            console.log("nombre: " + nombre);
+            console.log("apellido: " + apellido);
+            alert("Gracias por contactarnos " + nombre + " "  + apellido + ", nos estaremos comunicando en breves.");
+        }
+    </script>
 </body>
 </html>

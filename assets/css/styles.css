@@ -13,7 +13,9 @@ header {
     padding: 10px 0;
     font-size: 22px;
     border-radius: 2%;
+    position: relative;
 }
+
 
 nav{
     background: #f3eaea;
@@ -55,44 +57,31 @@ section.informacion{
     padding: 1.5%;
     margin: 1.5%;
     width: 700px;
-    height: 300px;
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
     font-size: 20px;
-    height: auto;
-}
-section.informacion2{
-    align-items: center;
-    text-align: left;
-    display: flex;
-    background-color: rgb(255, 255, 255);
-    color: rgb(17, 17, 17);
-    padding: 1.5%;
-    margin: 1.5%;
-    width: 700px;
-    height: 370px;
-    border-radius: 10px;
-    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
-    font-size: 20px;
-    height: auto;
     
 }
 
-section.turismo{
-    display: flex;
-    justify-content: center;
+
+section.turismo {
     align-items: center;
     text-align: center;
+    display: flex;
+    flex-direction: column; /* Adjust layout for smaller screens */
     background-color: rgb(255, 255, 255);
     color: rgb(17, 17, 17);
     padding: 1.5%;
     margin: 1.5%;
-    width: 1500px;
-    height: 750px;
-    border-radius: 45px;
+    width: 100%; /* Make it responsive */
+    max-width: 1350px; /* Limit the maximum width */
+    height: auto;
+    border-radius: 10px;
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
     font-size: 20px;
 }
+
 
 footer {
     background-color: rgb(0, 0, 0);
@@ -157,13 +146,19 @@ input {
     width: 100%;
 }
 
+.img{
+    margin: 30px;
+    padding: 10px;
+    width: 40%;
+    max-width: 1000px;
+    height: auto;
+}
+
 .img-cartel{
-    margin: 20px;
     background-color: #f3eaea;
     border-radius: 8%;
     padding: 10px;
-    width: 44%;
-    
+    max-width: 100%;
 }
 
 .img-turismo{
@@ -198,4 +193,18 @@ section.museos{
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
     font-size: 17px;
     height: auto;
+}
+
+
+.escudo {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #f3eaea;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    transform: translateY(-50%);
 }
